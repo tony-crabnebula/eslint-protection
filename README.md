@@ -1,8 +1,10 @@
 # @crabnebula/eslint-protected
 
-A small lint rule to protect parts of the code from unconscious change. It uses a comment containing the `//@protected` keyword, an optional number of lines or `*` for the whole file, and a hash that is calculated from the code meant to be protected.
+A small lint rule to protect parts of the code from unconscious change. It uses a comment containing the `//@protection` keyword*, an optional number of lines or `*` for the whole file, and a hash that is calculated from the code meant to be protected.
 
 Code that differs from the saved hash will be reported.
+
+\* it is also okay to use `//@protected` or `//@protect`; fixes will turn this into `//@protection` again
 
 ## Installation and Configuration
 

@@ -17,7 +17,7 @@ export default {
         return {
             Program() {
                 for (const comment of code.getAllComments()) {
-                    const [_, lines, savedHash] = comment.value.match(/@protection(?: ?(\d+|\*|)) *([^\n]*)/) || [null, null, null];
+                    const [_, lines, savedHash] = comment.value.match(/@protect(?:ion|ed|)(?: ?(\d+|\*|)) *([^\n]*)/) || [null, null, null];
                     if (savedHash !== null) {
                         const protectedCode = lines === '*'
                             ? trimmedLines

@@ -1,6 +1,6 @@
 {
   "name": "@crabnebula/eslint-protection",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "description": "eslint rule to protect parts of the code from unconscious change",
   "main": "eslint-protection.js",
